@@ -6,6 +6,8 @@ export interface Experience {
   period: string;
   description: string;
   bullets: string[];
+  companyUrl?: string;
+  logo?: string;
 }
 
 export interface Education {
@@ -14,6 +16,8 @@ export interface Education {
   period: string;
   grade?: string;
   note?: string;
+  url?: string;
+  logo?: string;
 }
 
 export interface SkillGroup {
@@ -46,6 +50,8 @@ export const experiences: Experience[] = [
     location: "Brussels",
     locationType: "Onsite",
     period: "Sep 2024 — Present",
+    companyUrl: "https://www.soda.io",
+    logo: "/portfolio/images/soda.png",
     description:
       "Core backend engineer on a data-quality testing platform used by enterprise clients. Focused on performance-critical systems and infrastructure scalability.",
     bullets: [
@@ -62,6 +68,8 @@ export const experiences: Experience[] = [
     location: "Brussels",
     locationType: "Onsite",
     period: "Mar 2024 — Aug 2024",
+    companyUrl: "https://www.europarl.europa.eu",
+    logo: "/portfolio/images/european-parliament.png",
     description:
       "Selected from 200+ applicants for a competitive traineeship. Built production features for the Parliament's Newsroom platform serving millions of EU citizens.",
     bullets: [
@@ -75,6 +83,8 @@ export const experiences: Experience[] = [
     location: "Milan",
     locationType: "Hybrid",
     period: "Jan 2023 — Mar 2024",
+    companyUrl: "https://www.capgemini.com",
+    logo: "/portfolio/images/capgemini.png",
     description:
       "Consultant for Simest (CDP Group), a state-owned company managing corporate financing for Italian businesses expanding internationally.",
     bullets: [
@@ -89,6 +99,8 @@ export const experiences: Experience[] = [
     location: "Milan",
     locationType: "Full remote",
     period: "Sep 2021 — Jan 2023",
+    companyUrl: "https://anoki.it",
+    logo: "/portfolio/images/anoki.png",
     description:
       "Built backend systems across multiple client projects — from electronic payment processing to media platform APIs.",
     bullets: [
@@ -101,27 +113,36 @@ export const experiences: Experience[] = [
 
 export const education: Education[] = [
   {
-    institution: "VUB",
-    degree: "MSc — Data Science",
+    institution: "Vrije Universiteit Brussel (VUB)",
+    degree: "MSc — Applied Informatics: AI & Data Science",
     period: "2025 — Ongoing",
+    url: "https://www.vub.be/en/studying-vub/all-study-programmes-vub/bachelors-and-masters-programmes-vub/master-applied-informatics-artificial-intelligence-data-science",
+    logo: "/portfolio/images/vub.png",
+    note: "Specializing in big data technology, machine learning, and data management at scale",
   },
   {
-    institution: "University UNINETTUNO",
+    institution: "International Telematic University UNINETTUNO",
     degree: "BSc — Computer Engineering",
     period: "2021 — 2023",
     grade: "94",
-    note: "University thesis on machine learning with TensorflowJS",
+    url: "https://www.uninettunouniversity.net/en/corso-laurea-ingegneria-informatica.aspx",
+    logo: "/portfolio/images/uninettuno.png",
+    note: "Thesis on machine learning with TensorflowJS. Coursework in algorithms, databases, computer networks, and software engineering.",
   },
   {
-    institution: "ITS FondazioneJAC",
-    degree: "Software Development",
+    institution: "ITS FondazioneJAC (JobsAcademy)",
+    degree: "Higher Technical Diploma — Software Development",
     period: "2019 — 2021",
     grade: "97",
+    url: "https://jac-its.it/en/courses/software-area/",
+    logo: "/portfolio/images/jac.png",
+    note: "Italy's largest ITS network. Hands-on training with 30%+ time in companies. Full-stack development with real client projects.",
   },
   {
-    institution: "Marzoli High School",
-    degree: "IT Expert",
+    institution: "ITIS Marzoli",
+    degree: "IT Expert Diploma",
     period: "2014 — 2019",
+    note: "Foundations of programming, electronics, and computer science",
   },
 ];
 
