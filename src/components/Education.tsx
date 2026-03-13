@@ -4,20 +4,20 @@ export default function Education() {
   return (
     <section id="education" className="py-20">
       <h2 className="text-2xl md:text-3xl font-bold mb-8">Education</h2>
-      <div className="space-y-6">
+      <div className="space-y-4">
         {education.map((edu) => (
           <div
             key={`${edu.institution}-${edu.period}`}
-            className="border-l-2 border-blue-500 dark:border-blue-400 pl-6 relative"
+            className="relative border-l-2 border-blue-500 dark:border-blue-400 pl-6 py-3 pr-4 rounded-r-lg bg-white/50 dark:bg-white/5 backdrop-blur-sm"
           >
-            <div className="absolute -left-[5px] top-1 w-2 h-2 rounded-full bg-blue-500 dark:bg-blue-400" />
+            <div className="absolute -left-[5px] top-4 w-2 h-2 rounded-full bg-blue-500 dark:bg-blue-400" />
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-1">
               <h3 className="font-semibold">{edu.degree}</h3>
               <span className="text-sm text-gray-500 dark:text-gray-500">
                 {edu.period}
               </span>
             </div>
-            <p className="text-blue-500 dark:text-blue-400 text-sm">
+            <p className="text-blue-600 dark:text-blue-400 text-sm font-medium">
               {edu.institution}
               {edu.grade && ` · Grade: ${edu.grade}`}
             </p>

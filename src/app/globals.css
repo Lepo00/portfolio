@@ -45,3 +45,25 @@ section {
 .animation-delay-4000 {
   animation-delay: 4s;
 }
+
+/* Gradient section divider */
+.section-divider {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(59, 130, 246, 0.3),
+    rgba(139, 92, 246, 0.3),
+    transparent
+  );
+}
+
+.dark .section-divider {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(96, 165, 250, 0.2),
+    rgba(167, 139, 250, 0.2),
+    transparent
+  );
+}
