@@ -127,7 +127,7 @@ export const education: Education[] = [
     grade: "94",
     url: "https://www.uninettunouniversity.net/en/corso-laurea-ingegneria-informatica.aspx",
     logo: "/portfolio/images/uninettuno.png",
-    note: "Thesis on machine learning with TensorflowJS. Coursework in algorithms, databases, computer networks, and software engineering.",
+    note: "Thesis on machine learning with TensorflowJS. Coursework spanning algorithms, databases, computer networks, operating systems, software engineering, electronics, and AI/deep learning foundations.",
   },
   {
     institution: "ITS FondazioneJAC (JobsAcademy)",
