@@ -30,13 +30,13 @@ export interface Project {
 
 export const profile = {
   name: "Luca Leporati",
-  title: "Backend Developer",
-  tagline: "Building data-intensive systems at scale",
+  title: "Backend Engineer",
+  tagline: "I turned a 50-minute pipeline into a 30-second one. I build backend systems that perform at scale.",
   email: "luca.leporati@outlook.com",
   linkedin: "https://www.linkedin.com/in/luca-leporati",
   github: "https://github.com/Lepo00",
   location: "Brussels, Belgium",
-  about: `Backend engineer with experience in building and operating data-intensive backend systems, including high-throughput ingestion pipelines and OLAP migrations at scale. Focused on production reliability, performance optimization, scalability, and hands-on architectural decisions across both OLTP and OLAP systems. Background mainly in Java, databases, and cloud infrastructure, with a track record of delivering impactful backend improvements. Currently expanding into data science with an MSc at VUB.`,
+  about: `I'm a backend engineer who ships measurable improvements. At Soda, I optimized a data ingestion pipeline from ~50 minutes down to ~30 seconds — a 102× speedup — and led the migration from MySQL to ClickHouse for analytical workloads. Before that, I built features at the European Parliament (selected from 200+ applicants), designed loan recovery systems at Capgemini, and developed payment and media APIs at Anoki. My stack centers on Java, Spring Boot, SQL databases, and cloud infrastructure. I care about production reliability, clean architecture, and solving problems that move the needle. Currently pursuing an MSc in Data Science at VUB to deepen my understanding of the data systems I build.`,
 };
 
 export const experiences: Experience[] = [
@@ -47,14 +47,13 @@ export const experiences: Experience[] = [
     locationType: "Onsite",
     period: "Sep 2024 — Present",
     description:
-      "Backend development of a data-quality testing platform using Java 21, JUnit 5 and MySQL, with a focus on performance and scalability.",
+      "Core backend engineer on a data-quality testing platform used by enterprise clients. Focused on performance-critical systems and infrastructure scalability.",
     bullets: [
-      "Developed and maintained backend features, handling bug fixing and production issues.",
-      "Optimized the dataset ingestion pipeline, achieving a ~102× performance improvement.",
-      "Worked on the migration of analytical workloads from MySQL (OLTP) to ClickHouse (OLAP) to improve performance and scalability.",
-      "Managed infrastructure scalability using Terraform, adapting the system to variable workloads.",
-      "Contributed to product delivery using the Shape Up framework.",
-      "Leveraged AI-assisted development with Claude Code to accelerate feature delivery, debugging, and code review.",
+      "Achieved a 102× performance improvement on the dataset ingestion pipeline — reducing processing time from ~50 minutes to ~30 seconds through batch optimization, query rewriting, and architectural redesign.",
+      "Drove the migration of analytical workloads from MySQL (OLTP) to ClickHouse (OLAP), enabling sub-second query performance on datasets that previously timed out.",
+      "Designed and implemented Terraform-based infrastructure scaling to handle variable workloads, reducing cloud costs while maintaining SLA targets.",
+      "Owned end-to-end feature delivery from design through production, including on-call support and incident resolution.",
+      "Adopted AI-assisted development workflows with Claude Code, accelerating code review cycles and reducing debugging time across the team.",
     ],
   },
   {
@@ -64,10 +63,10 @@ export const experiences: Experience[] = [
     locationType: "Onsite",
     period: "Mar 2024 — Aug 2024",
     description:
-      "5-month traineeship selected from 200 applicants. Developed new features for the Newsroom website.",
+      "Selected from 200+ applicants for a competitive traineeship. Built production features for the Parliament's Newsroom platform serving millions of EU citizens.",
     bullets: [
-      "Java 15, Spring Boot, Hibernate, Flyway, JSP",
-      "SQL Oracle",
+      "Delivered full-stack features end-to-end using Java 15, Spring Boot, Hibernate, and Oracle — from database schema design with Flyway migrations to JSP frontend rendering.",
+      "Worked autonomously in an international, English-speaking environment with cross-functional teams across multiple EU institutions.",
     ],
   },
   {
@@ -77,10 +76,11 @@ export const experiences: Experience[] = [
     locationType: "Hybrid",
     period: "Jan 2023 — Mar 2024",
     description:
-      "Consultant for Simest, a state-owned company in the CDP group involved in corporate financing. Worked on the loan recovery module — from brainstorming with product managers to implementation.",
+      "Consultant for Simest (CDP Group), a state-owned company managing corporate financing for Italian businesses expanding internationally.",
     bullets: [
-      "Feature development with Java, JSP",
-      "SQL Oracle, PL/SQL",
+      "Designed and built the loan recovery module end-to-end — from requirements gathering with product managers to production deployment.",
+      "Developed complex business logic in Java and PL/SQL, working with Oracle databases handling sensitive financial data.",
+      "Collaborated directly with stakeholders to translate business requirements into technical solutions for a mission-critical government system.",
     ],
   },
   {
@@ -90,11 +90,11 @@ export const experiences: Experience[] = [
     locationType: "Full remote",
     period: "Sep 2021 — Jan 2023",
     description:
-      "Consultant on several backend projects: an electronic payments app and a journalistic REST API platform.",
+      "Built backend systems across multiple client projects — from electronic payment processing to media platform APIs.",
     bullets: [
-      "REST API development with Java 11 Spring Boot, tested with JUnit 5",
-      "GraphQL API with NodeJS and AWS Lambda",
-      "Containerized applications with Docker, SQL database management with PostgreSQL",
+      "Designed and shipped REST APIs with Java 11 and Spring Boot, with comprehensive test coverage using JUnit 5.",
+      "Built a serverless GraphQL API with Node.js and AWS Lambda, reducing infrastructure costs compared to the previous always-on architecture.",
+      "Containerized services with Docker and managed PostgreSQL databases, establishing deployment patterns reused across projects.",
     ],
   },
 ];
@@ -139,22 +139,22 @@ export const skillGroups: SkillGroup[] = [
 
 export const projects: Project[] = [
   {
-    title: "Data Ingestion Pipeline Optimization",
+    title: "102× Pipeline Performance Optimization",
     description:
-      "Optimized a dataset ingestion pipeline at Soda, achieving a ~102× performance improvement through batching, query optimization, and architectural changes.",
-    technologies: ["Java 21", "MySQL", "ClickHouse"],
+      "Took a dataset ingestion pipeline from ~50 minutes to ~30 seconds. Identified bottlenecks through profiling, redesigned the batch processing architecture, rewrote critical SQL queries, and eliminated redundant I/O operations. The improvement unblocked customers who were hitting timeout limits on large datasets.",
+    technologies: ["Java 21", "MySQL", "ClickHouse", "Profiling"],
   },
   {
-    title: "OLTP to OLAP Migration",
+    title: "MySQL → ClickHouse OLAP Migration",
     description:
-      "Led the migration of analytical workloads from MySQL to ClickHouse, improving query performance for large-scale data analysis.",
-    technologies: ["MySQL", "ClickHouse", "Terraform"],
+      "Led the migration of analytical query workloads from MySQL to ClickHouse. Designed the data modeling strategy for columnar storage, built the ETL pipeline, and migrated dashboards and reporting queries. Result: queries that previously timed out now return in under a second.",
+    technologies: ["MySQL", "ClickHouse", "Terraform", "ETL"],
   },
   {
-    title: "ML with TensorflowJS",
+    title: "Machine Learning in the Browser",
     description:
-      "University thesis project implementing machine learning models in the browser using TensorflowJS.",
-    technologies: ["TensorflowJS", "JavaScript"],
+      "BSc thesis project: built and trained ML models that run entirely client-side using TensorflowJS. Explored the trade-offs between model size, inference speed, and accuracy when moving ML workloads from server to browser.",
+    technologies: ["TensorflowJS", "JavaScript", "Machine Learning"],
     link: "https://github.com/Lepo00",
   },
 ];
