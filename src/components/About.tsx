@@ -11,11 +11,12 @@ export default function About() {
           </p>
         </div>
         <div className="flex-shrink-0">
-          <div className="w-48 h-48 rounded-full bg-gray-200 dark:bg-gray-800 overflow-hidden">
-            {/* Replace with <Image> when profile photo is available */}
-            <div className="w-full h-full flex items-center justify-center text-gray-400 dark:text-gray-600 text-sm">
-              Photo
-            </div>
+          <div className="w-48 h-48 rounded-full bg-gray-200 dark:bg-gray-800 overflow-hidden ring-2 ring-blue-500/20 dark:ring-blue-400/20">
+            <img
+              src="/portfolio/images/profile.jpg"
+              alt="Luca Leporati"
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
       </div>
