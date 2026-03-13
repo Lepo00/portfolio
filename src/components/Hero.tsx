@@ -3,7 +3,7 @@ import { profile } from "@/data/content";
 export default function Hero() {
   return (
     <section className="min-h-screen flex flex-col items-center justify-center text-center px-6 relative">
-      <div className="relative z-10">
+      <div className="relative z-10 flex flex-col items-center">
         <h1 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-gray-900 via-blue-800 to-blue-600 dark:from-white dark:via-blue-300 dark:to-blue-500 bg-clip-text text-transparent">
           {profile.name}
         </h1>

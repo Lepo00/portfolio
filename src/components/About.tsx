@@ -15,7 +15,7 @@ export default function About() {
             <img
               src="/portfolio/images/profile.jpg"
               alt="Luca Leporati"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover object-[center_30%]"
             />
           </div>
         </div>
